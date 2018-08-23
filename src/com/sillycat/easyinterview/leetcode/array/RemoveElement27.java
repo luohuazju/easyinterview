@@ -1,5 +1,11 @@
 package com.sillycat.easyinterview.leetcode.array;
 
+/**
+ * https://leetcode.com/problems/remove-element/description/
+ * 
+ * @author sillycat
+ *
+ */
 public class RemoveElement27 {
 
 	public static int removeElement(int[] nums, int val) {
