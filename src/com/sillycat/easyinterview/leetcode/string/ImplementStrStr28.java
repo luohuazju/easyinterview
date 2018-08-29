@@ -16,20 +16,16 @@ public class ImplementStrStr28 {
 		if (haystack.isEmpty() || needle.length() > haystack.length()) {
 			return -1;
 		}
-		char[] haystacks = haystack.toCharArray();
-		char[] needles = needle.toCharArray();
 		int j = 0;
-		for (int i = 0; i < haystack.length(); i++) {
-			if (haystacks[i] == needles[j]) {
-				if (j == needles.length - 1) {
-					return i - needles.length + 1;
-				}
-				j++;
-			} else {
-				if(j > 0) {
-					i = i - j;
+		for (int i = 0; i <= haystack.length() - needle.length(); i++) {
+			for (; j < needle.length(); j++) {
+				if (haystack.charAt(i + j) != needle.charAt(j)) {
 					j = 0;
+					break;
 				}
+			}
+			if (j == needle.length()) {
+				return i;
 			}
 		}
 		return -1;
