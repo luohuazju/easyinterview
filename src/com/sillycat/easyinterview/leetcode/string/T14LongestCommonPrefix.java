@@ -8,7 +8,7 @@ package com.sillycat.easyinterview.leetcode.string;
  * @author Sillycat
  *
  */
-public class LongestCommonPrefix14 {
+public class T14LongestCommonPrefix {
 
 	public static String longestCommonPrefix(String[] strs) {
 		if (strs == null || strs.length == 0) {

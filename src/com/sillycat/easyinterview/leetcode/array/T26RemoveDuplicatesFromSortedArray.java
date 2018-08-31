@@ -7,7 +7,7 @@ package com.sillycat.easyinterview.leetcode.array;
  * @author Sillycat
  *
  */
-public class RemoveDuplicatesFromSortedArray26 {
+public class T26RemoveDuplicatesFromSortedArray {
 
 	public static int removeDuplicates(int[] nums) {
 		int j = 0;

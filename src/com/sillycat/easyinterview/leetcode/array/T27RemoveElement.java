@@ -6,7 +6,7 @@ package com.sillycat.easyinterview.leetcode.array;
  * @author sillycat
  *
  */
-public class RemoveElement27 {
+public class T27RemoveElement {
 
 	public static int removeElement(int[] nums, int val) {
 		int j = 0;

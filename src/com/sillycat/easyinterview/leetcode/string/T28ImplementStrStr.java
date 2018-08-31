@@ -7,7 +7,7 @@ package com.sillycat.easyinterview.leetcode.string;
  * @author Sillycat
  *
  */
-public class ImplementStrStr28 {
+public class T28ImplementStrStr {
 
 	public static int strStr(String haystack, String needle) {
 		if (needle.isEmpty()) {
