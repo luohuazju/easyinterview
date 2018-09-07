@@ -15,23 +15,16 @@ public class T80RemoveDuplicatesFromSortedArrayII {
 		if (nums == null || nums.length == 0) {
 			return 0;
 		}
-		if (nums.length == 1) {
+		if (nums.length <= 2) {
 			return nums.length;
 		}
-		int j = 0; //slow pointer
-		int flag = 1; //flag to identify the times
-		for (int i = 1; i < nums.length; i++) {
-			if (nums[i] != nums[j]) {
-				//not equal, move slow pointer to accept the value
+		int j = 1; // slow pointer
+		for (int i = 2; i < nums.length; i++) {
+			// not equels 2 times || not equals current
+			if (nums[j] != nums[j - 1] || nums[i] != nums[j]) {
 				j++;
-				flag = 1;
-			} else {
-				flag++; //equal, add up the flag
-				if(flag <= 2) { //not equal more than 2 times, move slow pointer to accepet value
-					j++;
-				}
+				nums[j] = nums[i];
 			}
-			nums[j] = nums[i];
 		}
 		return j + 1;
 	}
